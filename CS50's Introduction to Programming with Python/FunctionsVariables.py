@@ -1,3 +1,6 @@
+# 笔记：https://cs50.harvard.edu/python/2022/notes/0/#def
+
+---
 # Ask the user for their name, remove whitespace from the str and capitalize the first letter of each word
 name = input("What's your name? ").strip().title()
 
@@ -8,7 +11,6 @@ first, last = name.split(" ")
 print(f"hello,{first}")
 
 ---
-
 # Get the user's input
 x = float(input("What's x? "))
 y = float(input("What's y? "))
@@ -20,7 +22,6 @@ z = round(x + y)
 print(f"{z:,}")
 
 ---
-
 # Get the user's input
 x = float(input("What's x? "))
 y = float(input("What's y? "))
@@ -32,7 +33,7 @@ z = x / y
 print(f"{z:.2f}")
 
 ---
-#定义了一个不含参数的函数
+# 定义了一个不含参数的函数
 def hello():
     print("hello")
 
@@ -40,3 +41,12 @@ name = input("What's your name? ")
 hello()
 print(name)
 
+---
+# 定义了一个有一个参数的函数
+# Create our own function
+def hello(to):
+    print("hello,", to)
+
+# Output using our own function
+name = input("What's your name? ")
+hello(name)
