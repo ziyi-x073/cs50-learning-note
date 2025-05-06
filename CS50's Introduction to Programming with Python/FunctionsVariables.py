@@ -30,3 +30,13 @@ z = x / y
 
 # Print the result 小数点后面省略两位，比如0.666666会输出0.67
 print(f"{z:.2f}")
+
+---
+#定义了一个不含参数的函数
+def hello():
+    print("hello")
+
+name = input("What's your name? ")
+hello()
+print(name)
+
