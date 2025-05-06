@@ -53,3 +53,18 @@ hello(name)
 
 # Output without passing the expected arguments 这里会输出hello，world
 hello()
+
+---
+#如果我用下述方式定义一个main函数，我不用在意在主逻辑之前我有没有定义我要用的函数，因为在main这里我只是定义，最后的main()才是执行，而这时候函数都已经被定义好了
+def main():
+    # Output using our own function
+    name = input("What's your name? ")
+    hello(name)
+    # Output without passing the expected arguments
+    hello()
+
+# Create our own function
+def hello(to="world"):
+    print("hello,", to)
+
+main()
