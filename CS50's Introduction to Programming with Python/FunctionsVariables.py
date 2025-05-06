@@ -51,7 +51,7 @@ def hello(to="world"):
 name = input("What's your name? ")
 hello(name)
 
-# Output without passing the expected arguments 这里会输出hello，world
+# Output without passing the expected arguments 这里会输出hello, world
 hello()
 
 ---
@@ -66,5 +66,16 @@ def main():
 # Create our own function
 def hello(to="world"):
     print("hello,", to)
+
+main()
+
+---
+# 在下面这种情况我需要return一个值
+def main():
+    x = int(input("What's x? "))
+    print("x squared is", square(x))
+
+def square(n):
+    return n * n
 
 main()
