@@ -43,10 +43,13 @@ print(name)
 
 ---
 # 定义了一个有一个参数的函数
-# Create our own function
-def hello(to):
+# Create our own function 我也可以直接写hello(to)，就是不定义default值（即我没有给参数的时候的输出值）
+def hello(to="world"):
     print("hello,", to)
 
 # Output using our own function
 name = input("What's your name? ")
 hello(name)
+
+# Output without passing the expected arguments 这里会输出hello，world
+hello()
