@@ -13,7 +13,7 @@ print(f"hello,{first}")
 x = float(input("What's x? "))
 y = float(input("What's y? "))
 
-# Create a rounded result
+# Create a rounded result 【z = round(x / y, 2)】这句也有四舍五入到小数点后两位的意思
 z = round(x + y)
 
 # Print the formatted result 整数位隔三位一个逗号，比如1000会输出1,000
