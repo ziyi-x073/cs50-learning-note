@@ -79,3 +79,7 @@ def square(n):
     return n * n
 
 main()
+
+# 这里用return不用print是的理由
+# print是显示输出，如果我这里print(n * n)，我会在叫square函数的时候输出一个数字，但没有带着数值回去，所以会有x squared is None结果
+# 上述用了return，就是函数会带着一个值回去交还给调用者，main才会显示正常结果
